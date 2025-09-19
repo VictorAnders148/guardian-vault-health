@@ -102,6 +102,7 @@ VITE_GUARDIAN_VAULT_HEALTH_CONTRACT_ADDRESS=0x[YourContractAddress]
    - Check if all dependencies are properly installed
    - Verify environment variables are set correctly
    - Check build logs for specific error messages
+   - **Dependency Issues**: If you see "No matching version found" errors, check package.json for invalid version numbers
 
 2. **Wallet Connection Issues**:
    - Ensure WalletConnect Project ID is correct
