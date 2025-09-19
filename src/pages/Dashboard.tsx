@@ -1,15 +1,15 @@
 import { Navigation } from "@/components/ui/navigation";
-import { Hero } from "@/components/ui/hero";
+import { Dashboard as DashboardComponent } from "@/components/ui/dashboard";
 import { Footer } from "@/components/ui/footer";
 
-const Index = () => {
+const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <Hero />
+      <DashboardComponent />
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default Dashboard;

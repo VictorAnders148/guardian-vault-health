@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Lock, Database } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 export const Hero = () => {
@@ -52,16 +53,20 @@ export const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="bg-white text-primary hover:bg-white/90 glow-primary px-8 py-4 text-lg font-semibold transition-bounce">
-            Connect Your Wallet
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold transition-bounce"
-          >
-            Learn More
-          </Button>
+          <Link to="/dashboard">
+            <Button size="lg" className="bg-white text-primary hover:bg-white/90 glow-primary px-8 py-4 text-lg font-semibold transition-bounce">
+              View Dashboard
+            </Button>
+          </Link>
+          <Link to="/new-record">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-white text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold transition-bounce"
+            >
+              New Medical Records
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
