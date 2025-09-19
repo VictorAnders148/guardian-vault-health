@@ -8,46 +8,46 @@ All colors MUST be HSL. Medical + Blockchain aesthetic.
 
 @layer base {
   :root {
-    /* Base colors - Clean medical interface */
+    /* Base colors - Clean medical interface with better contrast */
     --background: 210 20% 98%;
-    --foreground: 215 25% 27%;
+    --foreground: 215 25% 15%;
 
     /* Card system - Clinical cleanliness */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 215 25% 15%;
 
     /* Popover system */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Primary - Medical Blue */
-    --primary: 214 100% 40%;
+    /* Primary - Medical Blue with better contrast */
+    --primary: 214 100% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 214 100% 50%;
+    --primary-glow: 214 100% 45%;
 
     /* Secondary - Soft clinical */
     --secondary: 210 20% 96%;
-    --secondary-foreground: 215 25% 27%;
+    --secondary-foreground: 215 25% 15%;
 
-    /* Muted tones */
+    /* Muted tones with better contrast */
     --muted: 210 20% 96%;
-    --muted-foreground: 215 13% 65%;
+    --muted-foreground: 215 13% 45%;
 
-    /* Accent - Encryption Cyan */
-    --accent: 180 100% 50%;
-    --accent-foreground: 215 25% 27%;
-    --accent-glow: 180 100% 70%;
+    /* Accent - Encryption Cyan with better contrast */
+    --accent: 180 100% 45%;
+    --accent-foreground: 215 25% 15%;
+    --accent-glow: 180 100% 65%;
 
     /* Success - Healthy Green */
-    --success: 158 64% 52%;
+    --success: 158 64% 45%;
     --success-foreground: 0 0% 100%;
 
     /* Warning - Medical attention */
-    --warning: 43 96% 56%;
-    --warning-foreground: 215 25% 27%;
+    --warning: 43 96% 50%;
+    --warning-foreground: 215 25% 15%;
 
     /* Destructive */
-    --destructive: 0 84% 60%;
+    --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
@@ -172,6 +172,24 @@ All colors MUST be HSL. Medical + Blockchain aesthetic.
       radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.05) 2px, transparent 2px),
       radial-gradient(circle at 75% 75%, hsl(var(--accent) / 0.05) 2px, transparent 2px);
     background-size: 20px 20px;
+  }
+
+  /* Enhanced text contrast utilities */
+  .text-contrast {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-contrast-strong {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Improved gradient backgrounds */
+  .bg-gradient-hero {
+    background: linear-gradient(135deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--primary-glow)) 30%,
+      hsl(var(--accent)) 70%, 
+      hsl(var(--accent-glow)) 100%);
   }
 
   /* DNA animation keyframes */
