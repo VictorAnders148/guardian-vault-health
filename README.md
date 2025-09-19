@@ -1,73 +1,110 @@
-# Welcome to your Lovable project
+# Guardian Vault Health
 
-## Project info
+A revolutionary medical data exchange platform where patients control encrypted health records through blockchain technology. Share with doctors securely, decrypt only with consent.
 
-**URL**: https://lovable.dev/projects/1ab145c4-90a3-4507-9b0a-5c9862624415
+## Features
 
-## How can I edit this code?
+- **Fully Homomorphic Encryption (FHE)**: Core medical data is encrypted using FHE technology
+- **Patient-Controlled Data**: Patients maintain full control over their health records
+- **Secure Doctor Access**: Healthcare providers can access encrypted data with patient consent
+- **Blockchain Integration**: Decentralized and tamper-proof medical records
+- **Privacy-First Design**: Zero-knowledge architecture ensures maximum privacy
 
-There are several ways of editing your application.
+## Technology Stack
 
-**Use Lovable**
+- **Frontend**: React 18, TypeScript, Vite
+- **UI Components**: shadcn/ui, Tailwind CSS
+- **Blockchain**: Ethereum (Sepolia Testnet)
+- **Encryption**: FHE (Fully Homomorphic Encryption)
+- **Wallet Integration**: RainbowKit, Wagmi, Viem
+- **State Management**: TanStack Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ab145c4-90a3-4507-9b0a-5c9862624415) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js 18+ 
+- npm or yarn
+- Git
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/VictorAnders148/guardian-vault-health.git
 
-Follow these steps:
+# Navigate to the project directory
+cd guardian-vault-health
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a `.env.local` file in the root directory:
 
-**Use GitHub Codespaces**
+```env
+NEXT_PUBLIC_CHAIN_ID=11155111
+NEXT_PUBLIC_RPC_URL=https://sepolia.infura.io/v3/b18fb7e6ca7045ac83c41157ab93f990
+NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=2ec9743d0d0cd7fb94dee1a7e6d33475
+NEXT_PUBLIC_INFURA_API_KEY=b18fb7e6ca7045ac83c41157ab93f990
+NEXT_PUBLIC_RPC_URL=https://1rpc.io/sepolia
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Reusable UI components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions and configurations
+├── pages/              # Application pages
+├── types/              # TypeScript type definitions
+└── utils/              # Helper functions
+```
 
-This project is built with:
+## Development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Available Scripts
 
-## How can I deploy this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-Simply open [Lovable](https://lovable.dev/projects/1ab145c4-90a3-4507-9b0a-5c9862624415) and click on Share -> Publish.
+### Contributing
 
-## Can I connect a custom domain to my Lovable project?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-Yes, you can!
+## Security
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This application implements state-of-the-art encryption and privacy measures:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- **FHE Encryption**: All sensitive medical data is encrypted using Fully Homomorphic Encryption
+- **Zero-Knowledge Proofs**: Patient consent is verified without revealing data
+- **Decentralized Storage**: Medical records are stored on blockchain for immutability
+- **Access Control**: Granular permissions for data sharing
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For support and questions, please open an issue in the GitHub repository.
+
+## Roadmap
+
+- [ ] Multi-chain support
+- [ ] Advanced analytics dashboard
+- [ ] Mobile application
+- [ ] Integration with major EHR systems
+- [ ] AI-powered health insights (privacy-preserving)
